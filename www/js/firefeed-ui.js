@@ -224,6 +224,7 @@ FirefeedUI.prototype.renderHome = function(e) {
     self._firefeed.login('facebook');
     $("body").addClass("feedPage");
     $("#header").addClass("feedPage");
+    $("#feedds").addClass("showit");
   });
 
   $("#about-link").remove();
@@ -426,3 +427,17 @@ FirefeedUI.prototype.renderSpark = function(id) {
   });
   return function() { self._firefeed.unload(); };
 };
+
+
+fileInput.change(function(){
+    $this = $(this);
+    $('#fileUpload').text($this.val());
+})
+
+$('#fileUpload').click(function(){
+  alert("HI");
+    fileInput.click();
+}).show();
+
+
+

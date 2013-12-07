@@ -22,11 +22,9 @@
       <header id="header">
       </header>
 
-      <script id="tmpl-index-header" type="text/html">
-      </script>
       <script id="tmpl-page-header" type="text/html">
         <div class="wrapper cf">
-          <h1 class="logo"><a href="#" id="top-logo"><img src="img/wordmark-big.png" alt="Firefeed" style="height: 14px"/></a></h1>
+          <h1 class="logo"><i class="fa fa-bars fa-inverse"></i><a href="#" id="top-logo"> <img src="img/wordmark-big.png" alt="Firefeed" style="height: 14px"/></a></h1>
           <nav>
             <a id="search-button" href="#">Search</a>
             {{#user}}
@@ -52,7 +50,8 @@
 
       <script id="tmpl-index-content" type="text/html">
         <div class="threefifth center aligncenter">
-          <img src="img/logo1.png" style="width: 80px;"/>
+          <img src="img/logo1.png" style="width: 60px;"/> 
+          <!-- <i class="fa fa-cutlery fa-inverse fa-3x"></i> -->
           <p>&nbsp;</p>
           <h1 class="main-heading"><img src="img/wordmark-big.png" alt="FoodBites" /></h1>
           <h2 class="subheading">
@@ -66,7 +65,6 @@
             </a>
           </div>
 
-          <hr/>
         </div>
 
 //        <h2 class="subheading">Latest Sparks</h2>
@@ -91,25 +89,44 @@
               </div>
             </div>
           </div>
+
           <div class="field">
-            <textarea id="spark-input" class="text" rows="4" cols="10" placeholder="Share an update"></textarea>
+            <a id="fileUpload" href="javascript:void():" class="btn default pushv4"><i class="fa fa-camera"></i></a>
+            <textarea id="spark-input" class="text" rows="2" cols="6" placeholder="Share an update"></textarea>
           </div>
           <small class="field-help"><span id="c-count"></span> characters remaining</small>
           <div id="spark-button-div">
             <a id="spark-button" href="#" class="btn default full pushv4">Update Status</a>
           </div>
 
+
           <div class="separator pushv4"></div>
 
-          <div id="suggested-users">
-            <h3>We suggest you follow:</h3>
-          </div>
         </div>
-        <div class="twothird">
+        <!-- <div class="twothird">
           <ul id="spark-timeline-list" class="item-list">
           </ul>
-        </div>
+        </div> -->
       </script>
+
+
+      <!-- FEED -->
+      <div id="feedds" class="feedPage">
+        <div class="name-div">
+          <img class="userPicture" src="img/theo.png">
+          <span class="userNames"> Theo</span>
+        </div>
+        <div class="image-div">
+          <img class="imageFeed" src="img/f1.jpg">
+        </div>
+        <div class="comments-div">
+          <ul>
+            <li class="commentFeed"><img class="userPicture2" src="img/john.png"> Looking forward !</li>
+            <li class="commentFeed"><img class="userPicture2" src="img/john.png"> ... to see the final dish :) </li>
+            <li class="commentFeed"><img class="userPicture2" src="img/julie.png"> I used the same last night. Enjoy it </li>
+          </ul>
+        </div>
+      </div>
 
       <script id="tmpl-search-content" type="text/html">
         <input class="text" type="text" id="search-input" />
@@ -240,6 +257,7 @@
         </div>
       </script>
     </div><!-- #wrapper END -->
+
 
     <footer id="footer">
       <ul>
