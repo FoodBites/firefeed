@@ -11,6 +11,8 @@
     <link href="img/favicon.png" rel="shortcut icon" />
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
     <link href="css/global.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   </head>
 
@@ -21,13 +23,10 @@
       </header>
 
       <script id="tmpl-index-header" type="text/html">
-        <a target="_blank" href="http://firebase.github.io" class="ribbon-curl">
-          <img src="img/curl-static.gif" width="200" height="200" alt="Official example"></a>
-        </a>
       </script>
       <script id="tmpl-page-header" type="text/html">
         <div class="wrapper cf">
-          <h1 class="logo"><a href="#" id="top-logo"><img src="img/wordmark.png" alt="Firefeed" /></a></h1>
+          <h1 class="logo"><a href="#" id="top-logo"><img src="img/wordmark-big.png" alt="Firefeed" style="height: 14px"/></a></h1>
           <nav>
             <a id="search-button" href="#">Search</a>
             {{#user}}
@@ -53,41 +52,21 @@
 
       <script id="tmpl-index-content" type="text/html">
         <div class="threefifth center aligncenter">
-          <img src="img/logo.png" />
+          <img src="img/logo1.png" style="width: 80px;"/>
           <p>&nbsp;</p>
-          <h1 class="main-heading"><img src="img/wordmark-large.png" alt="Firefeed" /></h1>
+          <h1 class="main-heading"><img src="img/wordmark-big.png" alt="FoodBites" /></h1>
           <h2 class="subheading">
-            An <a target="_blank" href="http://github.com/firebase/firefeed">open source</a>
-            Twitter clone built with <a target="_blank" href="https://firebase.com">Firebase</a>.
+            Share and inspire from the kitchen to the cloud.
           </h2>
-          <p class="big-copy pushv8">Feel free to use and modify this in your own products and projects!</p>
 
           <div id="login-div" class="pushv4">
             <a id="login-button" href="#" class="btn clean">
-              <span class="icon facebook"></span>
-              <span>Sign in with Facebook</span>
+              <i class="fa fa-facebook-square"></i>
+              <span>Sign in</span>
             </a>
           </div>
 
-          <div class="pushv4">
-            <a href="about.html" class="btn default pushv4">Read more about Firefeed</a>
-          </div>
-
-          <h2 class="subheading">
-            Also available on <a target="_blank" href="http://github.com/firebase/iFirefeed">iOS</a>
-          </h2>
-          <div class="pushv4">
-            <a href="https://itunes.apple.com/us/app/ifirefeed/id645597646?mt=8&uo=4"
-               target="itunes_store"
-               style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets/images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/htmlResources/assets/images/web/linkmaker/badge_appstore-lrg.svg);}">
-               </a>
-          </div>
-
           <hr/>
-
-          <h2 class="subheading">Latest Sparks</h2>
-          <ul id="spark-index-list" class="item-list">
-          </ul>
         </div>
       </script>
 
@@ -259,8 +238,7 @@
 
     <footer id="footer">
       <ul>
-        <li id="about-link"><a href="about.html">About</a></li>
-        <li>Follow <a href="//twitter.com/firebase" target="_blank">@Firebase</a></li>
+        <li>Copyrights &copy FoodBites</li>
       </ul>
     </footer>
 

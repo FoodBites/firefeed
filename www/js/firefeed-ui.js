@@ -222,6 +222,8 @@ FirefeedUI.prototype.renderHome = function(e) {
     loginButton.css("visibility", "hidden");
     self._spinner.spin($("#login-div").get(0));
     self._firefeed.login('facebook');
+    $("body").addClass("feedPage");
+    $("#header").addClass("feedPage");
   });
 
   $("#about-link").remove();
