@@ -781,6 +781,11 @@ img.userPicture2 {
   color: #34495E;  
 }
 
+.commentFeed span {
+  font-size: 14px;
+  color: #34495E;
+}
+
 
 .image-div {
   margin-top: 20px;
@@ -792,16 +797,28 @@ img.userPicture2 {
 }
 
 .commentFeed {
-  padding-top: 8px;
+  padding-top: 5px;
   padding-left: 20px;
   font-size: 14px;
-  color: #34495E;
+  color: #969696;
 }
 
-#feedds {
+#feedds, #feedds2, #feedds3 {
   display: none;
+  padding-top: 50px;
 }
 
-#feedds.showit {
+#feedds.showit, #feedds2.showit, #feedds3.showit {
   display: block;
 } 
+
+.name-div .likes {
+  font-size: 10px;
+  float: right;
+  vertical-align: baseline;
+}
+
+.commentFeed.tags{
+  padding-top: 5px;
+  padding-bottom: 15px;
+}

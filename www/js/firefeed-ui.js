@@ -225,6 +225,9 @@ FirefeedUI.prototype.renderHome = function(e) {
     $("body").addClass("feedPage");
     $("#header").addClass("feedPage");
     $("#feedds").addClass("showit");
+    $("#feedds2").addClass("showit");
+    $("#feedds3").addClass("showit");
+
   });
 
   $("#about-link").remove();
