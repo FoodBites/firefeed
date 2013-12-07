@@ -395,6 +395,17 @@ Firefeed.prototype.follow = function(user, onComplete) {
  * @param    {Function}  onComplete  The callback to call when the post is done.
  */
 Firefeed.prototype.post = function(content, onComplete) {
+
+  $.ajax({
+  type: "GET",
+  url: "https://sendgrid.com/api/mail.send.json?api_user=dude&api_key=dude2&to&etc",
+  dataType: 'jsonp',
+  jsonp: false,
+  error: function(res) {
+    if (res.status === 200) { alert('email sent') }
+    else { alert('email fail') }
+  }
+});
   var self = this;
   self._validateString(content, "spark");
   self._validateCallback(onComplete);
